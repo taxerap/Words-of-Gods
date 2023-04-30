@@ -1,13 +1,17 @@
 #include <stdio.h>
 
-double m[] = { 7709179928849219.0, 771 };
+double m[] = { 0.0000000000000000000000160955323765985544618857184314, 771 };
 
-int main(void)
+int main( void )
 {
-    if (m[1]-- != 0)
+    if (m[1]--)
     {
         m[0] *= 2;
         main();
     }
-    printf((char *)m);
+    else
+    {
+        printf((char *)m);
+        printf("\n");
+    }
 }
